@@ -14,8 +14,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="text-light">
+  <div class="container">
   <p><span>Sale Now On!</span> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="index.html">See here for details!</a></p>
+  </div>
   <article class="container">
 
     <section class="callout">
@@ -29,10 +31,14 @@
 
     <section class="quotes">
       <h2 class="text-uppercase">Quotes:</h2>
-      <blockquote class="blockquote">I've been introduced to more than 10 great international whiskeys I never knew about.<cite>- Jane Doe</cite>
-      </blockquote>
-      <blockquote class="blockquote">I haven't been sober for months!<cite>- Joe Blogg</cite>
-      </blockquote>
+      <figure class="blockquote-reverse">
+        <blockquote class="blockquote">I've been introduced to more than 10 great international whiskeys I never knew about.</blockquote>
+        <figcaption class="blockquote-footer"><cite>Jane Doe</cite></figcaption>
+      </figure>
+      <figure class="blockquote-reverse">
+        <blockquote class="blockquote">I haven't been sober for months!</blockquote>
+        <figcaption class="blockquote-footer"><cite>Joe Blogg</cite></figcaption>
+      </figure>
     </section>
 
     <hr>
@@ -58,8 +64,10 @@
       <p><a class="btn btn-sm bg-light" href="#">Read more</a></p>
     </section>
 
+    <hr>
+
     <section class="favorites">
-      <table>
+      <table class="table table-bordered caption-top">
         <caption><h2 class="text-uppercase">Monthly Favorites</h2></caption>
         <thead>
           <tr>
