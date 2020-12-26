@@ -20,24 +20,18 @@
     <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="index.html">See here for details!</a>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Whiskey Drop</a>
+      <a class="navbar-brand" href="/">Whiskey Drop</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.0/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">Official</a>
-          </li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.0/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">About</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -45,20 +39,25 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
+          <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>          
         </ul>
+        <div class="d-flex">
+          <p class="navbar-text my-auto me-2 d-none d-lg-block"><em>Great whiskey delivered to your door!</em></p>
+          <a class="btn btn-outline-success" href="/login" role="button">Sign In / Sign Up</a>
+        </div>
       </div>
     </div>
   </nav>
 
   <article class="container-fluid">
 
-    <section class="callout row">
-      <div class="col-12">
+    <section class="card">
+      <div class="card-body text-center bg-dark p-5">
         <h1>The finest whiskeys delivered to your doorstep.</h1>
-        <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <span class="delete">€19.99</span> <strong><mark>First one is free!</mark></strong></p>
+        <p class="lead">Sign up today to start receiving the world's best whiskeys every month. 
+          <span class="delete d-none d-md-inline">€19.99</span>
+          <br class="d-inline d-sm-none">
+          <strong><mark>First one is free!</mark></strong></p>
         <button class="btn btn-lg bg-success">Sign up!</button>
         <p><small class="text-muted">You must be over 18 to sign up to our service. Please, drink responsibly.</small></p>
       </div>
@@ -84,19 +83,19 @@
 
     <section class="features row">
       <header class="col-12"><h2 class="text-uppercase text-center">Features:</h2></header>
-      <article class="col-12 col-md-6">
+      <article class="col-12 col-md-6 col-lg-4">
         <h3>Worldwide Shipping <span>Free!</span></h3>
         <p>Thanks to our global distributors, we're able to provide FREE standard worldwide shipping anywhere in the world! Expedited shipping is also available for a small fee, which ensures your delivery arrives within 3 days. In some markets, we're currently trialling next-day delivery options.</p>
         <p><a class="btn btn-sm bg-light" href="#">Read more</a></p>
       </article>
 
-      <article class="col-12 col-md-6">
+      <article class="col-12 col-md-6 col-lg-4">
         <h3>100+ International Whiskeys</h3>
         <p>As purveyors of whiskey, we source various brands, flavors, and varieties from all around the globe. From your favorites, to something new and exotic, we've got your tastebuds covered! Be sure to check out the current top favorites below.</p>
         <p><a class="btn btn-sm bg-light" href="#">Read more</a></p>
       </article>
 
-      <article class="col-12 d-md-none">
+      <article class="col-12 d-md-none d-lg-block col-lg-4">
         <h3>Rated #1!</h3>
         <p>For over 10 years, Whiskey Drop has been the #1 global distributor of whiskey. We take customer feedback seriously, and strive to improve where improvements are requested by our clients, which is what has contributed to our fantastic success! Thank you!</p>
         <p><a class="btn btn-sm bg-light" href="#">Read more</a></p>
@@ -106,7 +105,7 @@
 
     <hr>
 
-    <section class="row favorites col-lg-3 offset-lg-4">
+    <section class="row favorites col-lg-4 offset-lg-4">
       <table class="table table-bordered caption-top text-light">
         <caption><h2 class="text-uppercase text-light text-center">Monthly Favorites</h2></caption>
         <thead>
