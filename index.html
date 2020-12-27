@@ -15,12 +15,7 @@
 </head>
 
 <body class="text-light">
-  <div class="alert bg-warning text-danger alert-dismissible fade show" role="alert" style="margin-bottom:0;">
-    <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="index.html">See here for details!</a>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
-
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Whiskey Drop</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +45,13 @@
   </nav>
 
   <article class="container-fluid">
- 
+    <div class="row mt-5">
+    <div class="alert bg-warning text-danger alert-dismissible fade show" role="alert" style="margin-bottom:0;">
+      <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="index.html">See here for details!</a>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  </div>
+  
     <section class="card">
       <div class="card-body text-center bg-dark p-5">
         <h1>The finest whiskeys delivered to your doorstep.</h1>
