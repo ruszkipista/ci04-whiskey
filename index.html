@@ -13,7 +13,7 @@
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="text-light">
+<body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Whiskey Drop</a>
@@ -43,29 +43,35 @@
     </div>
   </nav>
 
-  <article class="container-fluid">
+  <article class="container-fluid p-0">
     <div class="row mt-5">
-    <div class="alert bg-warning text-danger alert-dismissible fade show" role="alert" style="margin-bottom:0;">
-      <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="index.html">See here for details!</a>
+    <div class="alert bg-warning alert-dismissible fade show m-0" role="alert">
+      <p class="ps-3"><strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="index.html">See here for details!</a>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </p>
     </div>
   </div>
   
-    <section class="card">
-      <div class="card-body text-center bg-dark p-5">
-        <h1>The finest whiskeys delivered to your doorstep.</h1>
-        <p class="lead">Sign up today to start receiving the world's best whiskeys every month. 
-          <s class="d-none d-md-inline">€19.99</s>
-          <br class="d-inline d-sm-none">
-          <strong><mark>First one is free!</mark></strong></p>
-        <button class="btn btn-lg bg-success" data-bs-toggle="modal" data-bs-target="#sign-up-modal">Sign up!</button>
-        <p><small class="text-muted">You must be over 18 to sign up to our service. Please, drink responsibly.</small></p>
+    <section class="callout-container">
+      <div class="opaque-layer">&nbsp;</div>
+       <div class="card p-4 bg-transparent  text-light">
+        <div class="card-body text-center">
+          <h1 class="display-4 text-light"><strong>The finest whiskeys delivered to your doorstep.</strong></h1>
+          <hr class="col-2 offset-5 p-1 text-center bg-danger bg-gradient">
+          <p class="lead">Sign up today to start receiving the world's best whiskeys every month. 
+            <s class="d-none d-md-inline">€19.99</s>
+            <br class="d-inline d-sm-none">
+            <strong><mark>First one is free!</mark></strong></p>
+          <button class="btn btn-lg bg-success" data-bs-toggle="modal" data-bs-target="#sign-up-modal">Sign up!</button>
+          <p><small class="text-muted">You must be over 18 to sign up to our service. Please, drink responsibly.</small></p>
+        </div>
       </div>
+    </div>
     </section>
 
-    <hr>
 
-    <section class="row quotes">
+    <!-- QUOTES -->
+    <section class="row quotes-container p-5">
       <h2 class="text-uppercase text-center col-12">Quotes:</h2>
       <img src="./img/girl-image.png"  class="img-fluid rounded-circle d-none d-md-block col-md-3" alt="Jane Doe">
       <figure class="blockquote-reverse col-12 col-md-3">
@@ -79,9 +85,8 @@
       </figure>
     </section>
 
-    <hr>
-
-    <section class="features row">
+    <!-- FEATURES -->
+    <section class="features row m-5">
       <header class="col-12"><h2 class="text-uppercase text-center">Features:</h2></header>
       <article class="col-12 col-md-6 col-lg-4">
         <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
@@ -114,11 +119,10 @@
 
     </section>
 
-    <hr>
-
-    <section class="row favorites col-lg-4 offset-lg-4">
-      <table class="table table-bordered caption-top text-light">
-        <caption><h2 class="text-uppercase text-light text-center">Monthly Favorites</h2></caption>
+    <!-- FAVORITES -->
+    <section class="col-lg-5 offset-lg-3 p-5">
+      <table class="table table-bordered caption-top">
+        <caption><h2 class="text-uppercase text-center">Monthly Favorites</h2></caption>
         <thead>
           <tr><th>Name</th>                                            <th>Origin</th></tr>
         </thead>
@@ -135,7 +139,7 @@
   </article>
 
   <!-- SIGN-IN / -UP Modal Dialog   -->
-  <div class="modal text-dark" id="sign-up-modal" tabindex="-1">
+  <div class="modal" id="sign-up-modal" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
         <!-- MODAL-HEADER -->
@@ -147,8 +151,8 @@
         <div class="modal-body">
           <form>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="InputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
